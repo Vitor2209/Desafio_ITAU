@@ -1,28 +1,34 @@
-# 💳 Transação API
+<p align="center">
+  <img src="img/img.jpg" alt="Transação API" width="600"/>
+</p>
 
-API REST desenvolvida para **gerenciar transações financeiras** e **calcular estatísticas** das transações realizadas nos últimos 60 segundos.  
-O projeto foi construído com **Java 21** e **Spring Boot**, seguindo boas práticas de arquitetura e performance.
+<h1 align="center">💳 Transação API</h1>
+
+<p align="center">
+  API REST desenvolvida para <strong>gerenciar transações financeiras</strong> e <strong>calcular estatísticas</strong> das transações realizadas nos últimos 60 segundos.<br>
+  Construída com <strong>Java 21</strong> e <strong>Spring Boot</strong>, seguindo boas práticas de arquitetura e performance.
+</p>
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Java 21+**
-- **Spring Boot**
-- **Maven**
-- **Docker** (opcional)
-- **Git**
+- ☕ **Java 21+**
+- 🌱 **Spring Boot**
+- 🧱 **Maven**
+- 🐳 **Docker** (opcional)
+- 🧰 **Git**
 
 ---
 
-## ⚙️ Variáveis de Ambiente
+## ⚙️ Pré-requisitos
 
-Para executar o projeto localmente, é necessário ter instalado:
+Antes de iniciar, verifique se você possui instalado:
 
 - `Java` (JDK 21 ou superior)
-- `Maven` (versão 3.8.1 ou superior)
+- `Maven` (3.8.1 ou superior)
 - `Git`
-- `Docker` (opcional, para execução em container)
+- `Docker` (opcional)
 
 ---
 
@@ -44,19 +50,17 @@ mvn spring-boot:run
 O servidor será iniciado em:
 👉 http://localhost:8080
 
-🐳 Como Rodar com Docker (Opcional)
-4.1 Criar a Imagem Docker
-Certifique-se de que o Docker está instalado e execute:
-
+🐳 Executar com Docker (Opcional)
+4️⃣ Criar a Imagem Docker
 bash
 Copy code
 docker build -t api-transacoes .
-4.2 Executar o Container
+5️⃣ Executar o Container
 bash
 Copy code
 docker run -p 8080:8080 api-transacoes
-📘 Documentação da API
-➕ Receber Transações
+📘 Endpoints da API
+➕ Criar Transação
 POST /transacao
 
 Parâmetro	Tipo	Descrição
@@ -76,13 +80,13 @@ DELETE /transacao
 
 Remove todas as transações armazenadas.
 
-📊 Calcular Estatísticas
+📊 Consultar Estatísticas
 GET /estatistica
 
 Parâmetro	Tipo	Descrição
 intervaloSegundos	integer	Opcional. Padrão: 60 segundos.
 
-Resposta de Exemplo:
+Exemplo de Resposta:
 
 json
 Copy code
@@ -94,13 +98,19 @@ Copy code
   "quantidade": 3
 }
 🧠 Sobre o Projeto
-Este projeto foi desenvolvido como parte do Desafio Itaú Tech 2025, com foco em boas práticas de APIs REST, tratamento de dados em tempo real e estatísticas de desempenho.
+Este projeto foi desenvolvido como parte do Desafio Itaú Tech 2025, com foco em:
+
+✅ Boas práticas de APIs REST
+
+⚡ Processamento de dados em tempo real
+
+📈 Cálculo de estatísticas de desempenho
 
 👨‍💻 Autor
 Desenvolvido por @Vitor2209
 💼 Projeto do Desafio Itaú Tech 2025
 
-
+<p align="center"> <sub>Feito com ❤️ e Java ☕</sub> </p> ```
 
 
 

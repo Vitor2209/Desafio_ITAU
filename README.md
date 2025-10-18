@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/img.jpg" alt="Transação API" width="600"/>
+  <img src="imagem/img1.jpg" alt="Transação API" width="600"/>
 </p>
 
 <h1 align="center">💳 Transação API</h1>
